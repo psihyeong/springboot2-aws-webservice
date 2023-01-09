@@ -21,7 +21,7 @@ import javax.persistence.Id;
 @Entity                 // 주요 어노테이션인 Entity를 클래스에 가깝게 두고, 롬복 어노테이션은 그 위로 두기
 // 실제 DB의 테이블과 매칭될 클래스이며 보통 Entity 클래스라고도 합니다.
 // JPA를 사용하면 DB 데이터에 작업할 경우 실제 쿼리를 날리기 보다는, 이 Entity 클래스의 수정을 통해 작업할 수 있습니다.
-public class Posts {
+public class Posts extends BaseTimeEntity {
 
     // 해당 테이블의 PK 필드를 나타냅니다.
     @Id
